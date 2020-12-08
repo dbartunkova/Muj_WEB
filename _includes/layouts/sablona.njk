@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jsem zahradník</title>
+    <link rel="stylesheet" type="text/css" href= "/css/style.css">
+    <script src="https://use.fontawesome.com/7eafb69b9a.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+<header class="site-header">
+    
+    <h1 class="site-header__title"><a href ="/"class= "site-header__link" > Zahradničíme jednoduše</a>
+    <img src="/images/sprout - kopie.jpg" class="site-header__icon">
+     </h1>
+
+   
+
+<div class="media-icons">
+<a href="https://www.instagram.com/velky_maly_zahradnik/"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="https://twitter.com/VelkyMaly"><i class="fab fa-twitter"></i></a>
+
+</div>
+</header>
+
+<section class="hero">
+    <nav class="menu" role="navigation">
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+        
+    <ul class="menu__list">
+    <li class="menu__item {% if title==="ÚVOD" %} menu__item--active{% endif %}"> <a href="/" class="menu__link">ÚVOD</a></li>
+    <li class="menu__item {% if title==="ZAHRADNIČENÍ" %} menu__item--active{% endif %}"> <a href="/zahradniceni" class="menu__link">ZAHRADNIČENÍ</a></li>
+    <li class="menu__item {% if title==="TVOŘENÍ" %} menu__item--active{% endif %}"> <a href="/tvoreni" class="menu__link">TVOŘENÍ</a></li>
+    <li class="menu__item {% if title==="RECEPTY" %} menu__item--active{% endif %}"> <a href="/recepty" class="menu__link">RECEPTY</a></li>
+</ul>
+</nav>
+</section>
+
+
+{{ content | safe }}
+
+
+<footer class="footer"> ©Velký malý zahradník, 2020 </footer>
+
+</body>
+</html>
